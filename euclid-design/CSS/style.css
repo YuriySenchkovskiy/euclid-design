@@ -1,0 +1,334 @@
+/* Main css reset rules
+   ========================================================================== */
+
+:root {
+    --color-hex-white: #ffffff;
+    --color-hex-sand-gold:#A47312;
+    --color-hex-gold: #C93;
+    --color-hex-yellow-gold:#F0BF5F;
+    --color-hex-grey:#333;
+    --color-hex-light-grey:#999;
+    --color-hex-lightgray: #D3D3D3FF;
+    --color-hex-underline-grey:#E9E9E9;
+    --color-hex-black: #000;
+
+    --gap: 15px;
+}
+
+/*var(--color-hex-light-grey)*/
+
+@font-face {
+    font-family: 'Montserrat';
+    src: local('Montserrat-Regular'),
+    url('../fonts/Montserrat-Regular.woff2') format('woff2'),
+    url('../fonts/Montserrat-Regular.woff') format('woff');
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: local('Montserrat-Medium'),
+  url('../fonts/Montserrat-Medium.woff2') format('woff2'),
+  url('../fonts/Montserrat-Medium.woff') format('woff');
+    font-display: swap;
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: local('Montserrat-Bold'),
+  url('../fonts/Montserrat-Bold.woff2') format('woff2'),
+  url('../fonts/Montserrat-Bold.woff') format('woff');
+    font-display: swap;
+    font-weight: 700;
+    font-style: normal;
+}
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+    margin: 0;
+}
+
+h1, h2, h3, h4 {
+    margin: 0;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    min-width: 320px;
+    font-family: Montserrat, serif;
+    line-height: 1;
+    background: #FFF;
+}
+
+/* Helpers
+   ========================================================================== */
+
+.flex {
+    display: flex;
+}
+
+.container-site {
+    max-width: 1920px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.container {
+  max-width: 1770px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.section-offset {
+    margin-bottom: 50px;
+}
+
+.section-huge-offset {
+  margin-bottom: 100px;
+}
+
+/* Header
+   ========================================================================== */
+.header {
+  padding: 14px 0;
+
+  border-radius: 0px 0px 32px 32px;
+  background: #FFF;
+  box-shadow: 0px 5px 40px 0px rgba(0, 0, 0, 0.10);
+}
+
+.header__items {
+  justify-content: space-between;
+}
+
+.header__logo {
+  min-width: 225px;
+  justify-content: center;
+  align-items: center;
+  gap: 12.168px;
+}
+
+.header__right {
+  align-items: center;
+  gap: 85px;
+}
+
+.nav__list {
+  margin: 0;
+  padding: 0;
+  gap: 85px;
+
+  list-style: none;
+}
+
+.nav__link {
+  color: #000;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.13px;
+}
+
+/* Main
+   ========================================================================== */
+/* Offer
+   ========================================================================== */
+
+.main__article {
+  padding: 53px 0 100px 80px;
+
+  border-radius: 32px;
+  background: lightgray url("../img/first.png") no-repeat left center;
+  background-size: cover;
+}
+
+.main__header {
+  max-width: 837px;
+  margin-bottom: 23px;
+
+  color: #FFF;
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 0.68px;
+}
+
+.main__text {
+  max-width: 790px;
+  margin-bottom: 88px;
+
+  color: #FFF;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.main__button {
+  padding: 25px 39px;
+  border-radius: 16px;
+  background: #F90;
+  border: 0;
+
+  color: #FFF;
+  font-size: 23px;
+  font-weight: 700;
+}
+
+/* About us
+   ========================================================================== */
+
+.about-us__header {
+  margin-bottom: 23px;
+
+  color: #000;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.about-us__description {
+  max-width: 1235px;
+
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+/* Advantages
+   ========================================================================== */
+
+.advantages__groups {
+  gap: 32px;
+}
+
+.advantages__left-group {
+  position: relative;
+  overflow: hidden;
+
+  border-radius: 32px;
+  background: lightgray url("../img/second.png") no-repeat left center;
+  background-size: cover;
+}
+
+.advantages__group::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 32px;
+  background: rgba(0, 0, 0, 0.50);
+  z-index: 1;
+}
+
+.advantages__group {
+  position: relative;
+  z-index: 2;
+
+  justify-content: space-between;
+  padding: 50px;
+  gap: 160px;
+}
+
+.advantages__text,
+.advantages__button {
+  z-index: 3;
+}
+
+.advantages__text {
+  color: #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.advantages__button {
+  padding: 19px 38px;
+
+  border-radius: 16px;
+  border: 3px solid #F90;
+  background-color: transparent;
+
+  color: #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.advantages__right-group {
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.advantages__right {
+  min-height: 295px;
+  padding: 65px 120px 65px 60px;
+  gap: 50px;
+
+  fill: #FFF;
+  border-radius: 16px;
+  border: 1px solid #CACACA;
+}
+
+.advantages__icons {
+  position: relative;
+}
+
+.advantages__icon1 {
+  position: absolute;
+  background: url("../img/frame-icon.svg") center center no-repeat;
+}
+
+.advantages__right-text {
+  color: #000;
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 200% */
+}
+
+/* Steps
+   ========================================================================== */
+/* Questions
+   ========================================================================== */
+
+/* Footer
+   ========================================================================== */
