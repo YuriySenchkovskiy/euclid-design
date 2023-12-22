@@ -68,7 +68,7 @@ img {
 h1, h2, h3, h4, p {
   margin: 0;
   padding: 0;
-  line-height: 1;
+  line-height: normal;
 }
 
 button {
@@ -79,7 +79,7 @@ button {
 body {
   min-width: 320px;
   font-family: Montserrat, serif;
-  line-height: 1;
+  line-height: normal;
   background: var(--color-hex-white);
 }
 
@@ -97,8 +97,9 @@ body {
 }
 
 .container {
-  max-width: 1770px;
+  max-width: 1920px;
   margin: 0 auto;
+  padding: 0 75px;
   width: 100%;
 }
 
@@ -195,18 +196,18 @@ body {
 
 /* Main
    ========================================================================== */
-/* Offer
+/* Hero
    ========================================================================== */
 
-.main__block {
-  padding: 100px 0 100px 80px;
+.hero__block {
+  padding: 100px 80px;
 
   border-radius: 32px;
   background: var(--color-hex-lightgray) url("../img/first.png") no-repeat left center;
   background-size: cover;
 }
 
-.main__header {
+.hero__header {
   max-width: 837px;
   margin: 0 0 23px;
 
@@ -218,7 +219,7 @@ body {
   letter-spacing: 0.68px;
 }
 
-.main__text {
+.hero__text {
   max-width: 790px;
   margin-bottom: 88px;
 
@@ -229,7 +230,7 @@ body {
   line-height: normal;
 }
 
-.main__button {
+.hero__button {
   padding: 25px 39px;
   border-radius: 16px;
 
@@ -244,15 +245,15 @@ body {
   transition: color 0.2s ease-in-out, background-color 0.4s ease-in-out;
 }
 
-.main__button:focus {
+.hero__button:focus {
   background-color: var(--color-hex-light-citrus);
 }
 
-.main__button:hover {
+.hero__button:hover {
   background-color: var(--color-hex-light-citrus);
 }
 
-.main__button:active {
+.hero__button:active {
   background-color: var(--color-hex-juicy-citrus);
 }
 
@@ -287,7 +288,7 @@ body {
    ========================================================================== */
 
 .advantages {
-  margin-bottom: 105px;
+  margin-bottom: 100px;
 }
 
 .advantages__groups {
@@ -332,7 +333,7 @@ body {
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
-  line-height: 1;
+  line-height: normal;
 
   transition: color 0.2s ease-in-out, background-color 0.4s ease-in-out;
 }
@@ -361,7 +362,7 @@ body {
 .advantages__right1,
 .advantages__right2 {
   align-items: center;
-  padding: 65px 60px 65px 300px;
+  padding: 65px 60px 60px 300px;
 
   border-radius: 32px;
   border: 1px solid var(--color-hex-light-grey);
@@ -380,7 +381,7 @@ body {
 }
 
 .advantages__header {
-  margin-bottom: 11px;
+  margin-bottom: 9px;
 
   color: var(--color-hex-black);
 
@@ -400,11 +401,11 @@ body {
    ========================================================================== */
 
 .steps {
-  margin-bottom: 108px;
+  margin-bottom: 100px;
 }
 
 .steps__header {
-  margin-bottom: 38.2px;
+  margin-bottom: 33px;
 
   color: var(--color-hex-black);
 
@@ -431,10 +432,12 @@ body {
   line-height: 32px;
 }
 
-.steps__text {
+.steps__texts {
   max-width: 43%;
   margin-bottom: 18px;
+}
 
+.steps__text {
   color: var(--color-hex-black);
 
   font-size: 16px;
@@ -536,6 +539,7 @@ body {
 }
 
 .questions__box {
+  max-width: 569px;
   padding: 65px 110px 62px 60px;
 
   border-radius: 32px;
@@ -543,13 +547,13 @@ body {
 }
 
 .questions__header-third {
-  margin-bottom: 10.5px;
+  margin-bottom: 8px;
 
   color: var(--color-hex-black);
 
   font-size: 24px;
   font-weight: 700;
-  line-height: 1.15;
+  line-height: 29px;
 }
 
 .questions__text {
@@ -674,7 +678,7 @@ body {
 
 .footer__input {
   min-width: 100%;
-  padding: 22px;
+  padding: 14px 24px;
 
   border-radius: 16px;
   border: 0;
@@ -707,7 +711,7 @@ input {
 }
 
 .footer__message {
-  padding: 18px;
+  resize: none;
 }
 
 textarea {
