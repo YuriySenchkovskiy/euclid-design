@@ -305,6 +305,7 @@ body {
 }
 
 .advantages__group {
+  width: 100%;
   align-items: center;
   padding: 50px;
   border-radius: 32px;
@@ -417,8 +418,9 @@ body {
   border-radius: 32px;
 
   background-repeat: no-repeat;
-  background-position: 100% bottom;
-  background-image: url("../img/third.png");
+  background-position: right bottom;
+  background-image: url("../img/third1920.png");
+  background-size: 48% 100%;
   /*background-size: contain;*/
 }
 
@@ -540,7 +542,7 @@ body {
 
 .questions__box {
   max-width: 569px;
-  padding: 65px 110px 62px 60px;
+  padding: 65px 99px 62px 60px;
 
   border-radius: 32px;
   border: 1px solid var(--color-hex-light-grey);
@@ -678,7 +680,7 @@ body {
 
 .footer__input {
   min-width: 100%;
-  padding: 14px 24px;
+  padding: 19px 24px;
 
   border-radius: 16px;
   border: 0;
@@ -726,13 +728,16 @@ textarea {
 .footer__button {
   padding: 19px 52px;
 
+  border: none;
   border-radius: 16px;
   cursor: pointer;
   background: var(--color-hex-citrus);
 
   color: var(--color-hex-white);
   font-size: 16px;
+  font-style: normal;
   font-weight: 700;
+  line-height: normal;
 
   transition: color 0.2s ease-in-out, background-color 0.4s ease-in-out;
 }
