@@ -15,7 +15,7 @@
 
     .steps__group {
         border-radius: 32px;
-        background-size: 48% 100%;
+        background-size: 47.3% 98%;
     }
 
     .questions__content {
@@ -59,21 +59,17 @@
         padding: 0 50px;
     }
 
-    .section-offset {
+    .header {
         margin-bottom: 38px;
-    }
-
-    .section-huge-offset {
-        margin-bottom: 84px;
     }
 
     .header__logo-image {
         width: 150px;
-        height: 48px;
+        /*height: 48px;*/
     }
 
     .header__items {
-        padding: 24px 50px;
+        padding: 26px 50px;
     }
 
     .header__right {
@@ -82,11 +78,12 @@
 
     .nav__list {
         gap: 60px;
-        letter-spacing: -0.13px;
     }
 
     .hero__block {
-        padding: 161px 77px;
+        min-height: 668px;
+        margin-bottom: 35px;
+        padding: 160px 77px;
     }
 
     .hero__header {
@@ -95,8 +92,13 @@
     }
 
     .hero__text {
-        margin-bottom: 61px;
+        margin-bottom: 60px;
         font-size: 20px;
+    }
+
+    .hero__button {
+        padding: 24.5px 34.9px;
+        font-size: 24px;
     }
 
     .about-us {
@@ -104,14 +106,15 @@
     }
 
     .about-us__header {
-        margin-bottom: 20px;
+        margin-bottom: 21px;
     }
 
     .advantages {
-        margin-bottom: 74px;
+        margin-bottom: 78px;
     }
 
     .advantages__groups {
+        gap: 32px;
         flex-wrap: wrap;
     }
 
@@ -128,8 +131,13 @@
         margin-right: 105px;
     }
 
+    .advantages__right-group {
+        gap: 32px;
+    }
+
     .advantages__right1,
     .advantages__right2 {
+        min-height: 295px;
         padding: 64px 150px 65px 380px;
         background-position: 10.4% 48.9%;
         /*background-size: 20.555%;*/
@@ -145,11 +153,15 @@
 
     .steps__texts {
         max-width: 47.3%;
-        margin-bottom: 24px;
+        margin-bottom: 25px;
+    }
+
+    .questions {
+        margin-bottom: 80px;
     }
 
     .questions__header {
-        margin-bottom: 30px;
+        margin-bottom: 31px;
     }
 
     .questions__content {
@@ -158,7 +170,8 @@
 
     .questions__box {
         max-width: 100%;
-        padding: 64px 66px 62px 59px;
+        min-height: 231px;
+        padding: 65px 65px 62px 60px;
     }
 
     .footer__section {
@@ -171,11 +184,25 @@
     }
 
     .footer__logo-block {
-        margin-bottom: 15px;
+        margin-bottom: 17px;
     }
 
     .footer__second-block {
         max-width: 541px;
+    }
+
+    .footer__header {
+        margin-bottom: 25px;
+    }
+
+    .footer__form {
+        margin-bottom: 27px;
+    }
+
+    .footer__input {
+        padding: 14px 24px;
+        font-weight: 400;
+        line-height: 32px;
     }
 
     .footer__button {
@@ -197,12 +224,33 @@
         background-size: cover;
     }
 
+    .advantages__text {
+        margin-right: 160px;
+    }
+
+    .advantages__left-group {
+        background:  url("../img/second1024.png") no-repeat top center;
+    }
+
     .advantages__right1,
     .advantages__right2 {
-        padding: 65px 150px 65px 34%;
-        background-position: 10.4% 48.9%;
+        padding: 65px 150px 62px 34.18%;
+        background-position: 10.4% 50%;
         background-size: 20.555%;
     }
+
+    .footer__section {
+        justify-content: normal;
+        gap: 132px;
+    }
+
+    .footer__header {
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
 }
 
 /* 940
@@ -216,6 +264,11 @@
 
     .header__items {
         padding: 17px 50px;
+    }
+
+    .header {
+        margin-bottom: 40px;
+        border-radius: 0 0 24px 24px;
     }
 
     .header__logo {
@@ -233,11 +286,12 @@
 
     .nav__link {
         font-size: 16px;
-        letter-spacing: 0.08px;
+        letter-spacing: 0.25px;
     }
 
     .hero__block {
         padding: 160px 40px;
+        border-radius: 24px;
     }
 
     .hero__header {
@@ -248,8 +302,26 @@
         font-size: 18px;
     }
 
+    .hero__button {
+        padding: 25px 39px;
+
+        font-size: 23px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
     .about-us {
         margin-bottom: 55px;
+    }
+
+    .advantages__groups {
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+
+    .advantages__right-group {
+        gap: 30px;
     }
 
     .steps__group {
@@ -270,22 +342,27 @@
     }
 
     .questions__header {
-        margin-bottom: 33px;
+        margin-bottom: 32px;
     }
 
     .questions__box {
-        padding: 35px 65px 35px 40px;
+        min-height: 200px;
+        padding: 35px 65px 33px 40px;
     }
 
     .questions__content {
-        gap: 30px;
+        gap: 32px;
     }
 
     .footer__section {
         flex-direction: column-reverse;
         align-items: normal;
         gap: 50px;
-        padding: 50px 148px 42px 50px;
+        padding: 51px 148px 46px 50px;
+    }
+
+    .footer__form {
+        margin-bottom: 29px;
     }
 
     .footer__nav {
@@ -299,49 +376,72 @@
 @media (max-width: 768px) {
 
     .hero__block {
+        min-height: 662px;
         background: var(--color-hex-lightgray) url("../img/first768.png") no-repeat left center;
         background-size: cover;
     }
 
     .advantages {
-        margin-bottom: 78px;
+        margin-bottom: 80px;
     }
 
     .advantages__left-group {
         min-height: 650px;
         min-width: 100%;
+        border-radius: 24px;
 
         background: var(--color-hex-lightgray) url("../img/second768.png") no-repeat left center;
     }
 
     .advantages__group {
         padding: 34px 40px;
+        border-radius: 24px;
         gap: 0;
     }
 
     .advantages__text {
         max-width: 366px;
-        margin-right: 47px;
+        margin-right: 50px;
         gap: 0;
+    }
+
+    .advantages__button {
+        padding: 19px 38px;
+
+        border-radius: 16px;
+        border: 3px solid var(--color-hex-citrus);
+
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+
+        letter-spacing: -0.15px;
     }
 
     .advantages__right1,
     .advantages__right2 {
+        min-height: 235px;
         padding: 35px 46px 35px 170px;
-        background-position: 6.5% 50%;
-        background-size: 18%;
+        border-radius: 24px;
+        background-position: 6.9% 50%;
+        background-size: 17.39%;
     }
 
     .advantages__header {
         margin-bottom: 8px;
         letter-spacing: -0.08px;
     }
+
+    .footer__logo-block {
+        margin-bottom: 12px;
+    }
 }
 
-/* 750
+/* 767
    ========================================================================== */
 
-@media (max-width: 750px) {
+@media (max-width: 767px) {
 
     .container {
         padding: 0 15px;
@@ -357,15 +457,11 @@
     }
 
     .header__items {
-        padding: 17px 15px 80px 15px;
-    }
-
-    .header__right {
-        flex-direction: column-reverse;
-    }
-
-    .nav {
-        display: none;
+        position: relative;
+        padding: 17px 15px 40px 15px;
+        flex-direction: column;
+        gap: 22px;
+        overflow-x: hidden;
     }
 
     .nav__list {
@@ -374,11 +470,19 @@
 
     .nav__link {
         font-size: 16px;
+        letter-spacing: 0.3px;
+    }
+
+    .header__search {
+        position: absolute;
+        top: 22px;
+        right: 15px;
     }
 
     .hero__block {
+        min-height: 308px;
         margin-bottom: 60px;
-        padding: 59px 22px;
+        padding: 60px 21px 59px 24px;
         border-radius: 16px;
         text-align: center;
 
@@ -390,7 +494,7 @@
         margin-bottom: 7px;
 
         font-size: 20px;
-        letter-spacing: 0;
+        letter-spacing: 0.25px;
     }
 
     .hero__text {
@@ -399,10 +503,13 @@
     }
 
     .hero__button {
-        padding: 14px 28px;
+        padding: 12.57px 29.1px 12.57px 29.1px;
         border-radius: 8px;
 
         font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
     }
 
     .about-us {
@@ -422,7 +529,11 @@
     }
 
     .advantages {
-        margin-bottom: 57px;
+        margin-bottom: 59px;
+    }
+
+    .advantages__groups {
+        gap: 32px;
     }
 
     .advantages__left-group {
@@ -430,10 +541,14 @@
         border-radius: 16px;
         align-items: normal;
 
-        padding-top: 72%;
+        padding-top: 71.6%;
 
         background:  url("../img/second320.png") no-repeat top center;
         background-size: contain;
+    }
+
+    .advantages__right-group {
+        gap: 32px;
     }
 
     .advantages__group {
@@ -480,7 +595,8 @@
     }
 
     .advantages__header {
-        margin-bottom: 5px;
+        margin-bottom: 4px;
+        letter-spacing: 0.0px;
     }
 
     .advantages__right1 {
@@ -543,6 +659,10 @@
         line-height: 32px; /* 177.778% */
     }
 
+    .steps__texts {
+        margin-bottom: 23px;
+    }
+
     .steps__text {
         font-size: 14px;
         font-style: normal;
@@ -559,7 +679,7 @@
     }
 
     .steps__button1 {
-        padding: 10.5px 43.5px;
+        padding: 12.31px 43.5px;
         border-radius: 8px;
 
         font-size: 12px;
@@ -579,7 +699,7 @@
     }
 
     .questions {
-        margin-bottom: 62px;
+        margin-bottom: 60px;
     }
 
     .questions__header {
@@ -592,8 +712,8 @@
     }
 
     .questions__box {
+        min-height: 160px;
         padding: 0;
-        gap: 32px;
         border: none;
     }
 
@@ -615,11 +735,11 @@
 
     .footer__section {
         padding: 30px 14px 27px 14px;
-        gap: 25px;
+        gap: 23px;
     }
 
     .footer__first-block {
-        padding-top: 15px;
+        padding-top: 16px;
 
         align-items: center;
         border-top: 1px solid #414141;
@@ -658,7 +778,9 @@
 
     .footer__input {
         padding: 14px 20px;
+    }
 
+    .footer__input::placeholder {
         font-size: 14px;
         font-style: normal;
         font-weight: 400;
@@ -676,7 +798,7 @@
     }
 
     .footer__button {
-        padding: 12px 19px;
+        padding: 12.31px 19px 12.69px 19px;
         border-radius: 8px;
 
         font-size: 12px;

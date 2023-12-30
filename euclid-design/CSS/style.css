@@ -13,7 +13,7 @@
     --color-hex-black: #000;
 }
 
-/*var(--color-hex-white)*/
+/*var(--color-hex-citrus)*/
 
 @font-face {
     font-family: 'Montserrat';
@@ -33,6 +33,16 @@
     font-display: swap;
     font-weight: 500;
     font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: local('Montserrat-Medium'),
+  url('../fonts/Montserrat-Semibold.woff2') format('woff2'),
+  url('../fonts/Montserrat-Semibold.woff') format('woff');
+  font-display: swap;
+  font-weight: 600;
+  font-style: normal;
 }
 
 @font-face {
@@ -115,6 +125,7 @@ body {
    ========================================================================== */
 
 .header {
+  margin-bottom: 50px;
   border-radius: 0 0 32px 32px;
   box-shadow: 0 5px 40px 0 rgba(0, 0, 0, 0.10);
 }
@@ -158,6 +169,7 @@ body {
 .nav__link:focus {
   outline-offset: 7px;
   outline: 2px solid var(--color-hex-citrus);
+  text-decoration: none;
 }
 
 .nav__link:active {
@@ -200,6 +212,7 @@ body {
    ========================================================================== */
 
 .hero__block {
+  margin-bottom: 50px;
   padding: 100px 80px;
 
   border-radius: 32px;
@@ -288,7 +301,7 @@ body {
    ========================================================================== */
 
 .advantages {
-  margin-bottom: 100px;
+  margin-bottom: 105px;
 }
 
 .advantages__groups {
@@ -357,7 +370,7 @@ body {
 .advantages__right-group {
   flex-direction: column;
   justify-content: space-between;
-  gap: 32px;
+  gap: 30px;
 }
 
 .advantages__right1,
@@ -420,7 +433,7 @@ body {
   background-repeat: no-repeat;
   background-position: right bottom;
   background-image: url("../img/third1920.png");
-  background-size: 48% 100%;
+  background-size: 49% 98%;
   /*background-size: contain;*/
 }
 
@@ -527,8 +540,12 @@ body {
 /* Questions
    ========================================================================== */
 
+.questions {
+  margin-bottom: 100px;
+}
+
 .questions__header {
-  margin-bottom: 35px;
+  margin-bottom: 32px;
 
   color: var(--color-hex-black);
 
@@ -592,7 +609,7 @@ body {
 }
 
 .footer__logo-block {
-  margin-bottom: 20px;
+  margin-bottom: 17px;
 }
 
 .footer__nav {
@@ -670,7 +687,7 @@ body {
 
 .footer__form {
   flex-direction: column;
-  margin-bottom: 35px;
+  margin-bottom: 25px;
 }
 
 .footer__form-element1,
@@ -703,6 +720,7 @@ body {
 .footer__input::placeholder {
   color: var(--color-hex-light-grey);
   font-size: 16px;
+  font-style: normal;
   font-weight: 400;
   line-height: 32px;
   z-index: 1;
@@ -713,7 +731,9 @@ input {
 }
 
 .footer__message {
+  min-height: 150px;
   resize: none;
+  line-height: 32px;
 }
 
 textarea {
