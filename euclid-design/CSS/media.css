@@ -1,7 +1,7 @@
 /* 1900
    ========================================================================== */
 
-@media (max-width: 1900px) {
+@media (max-width: 1920px) {
 
     .advantages__text {
         margin-right: 25px;
@@ -14,16 +14,19 @@
     }
 
     .steps__group {
-        border-radius: 32px;
+        /*border-radius: 32px;*/
         background-size: 47.3% 98%;
     }
 
     .questions__content {
         flex-wrap: wrap;
+        flex-direction: column;
     }
 
     .questions__box {
-        max-width: calc((100% - 32px) / 2);
+        max-width: 100%;
+        min-height: 231px;
+        padding: 65px 65px 62px 60px;
     }
 }
 
@@ -162,16 +165,6 @@
 
     .questions__header {
         margin-bottom: 31px;
-    }
-
-    .questions__content {
-        flex-direction: column;
-    }
-
-    .questions__box {
-        max-width: 100%;
-        min-height: 231px;
-        padding: 65px 65px 62px 60px;
     }
 
     .footer__section {
@@ -406,7 +399,7 @@
     }
 
     .advantages__button {
-        padding: 19px 38px;
+        padding: 17px 36px;
 
         border-radius: 16px;
         border: 3px solid var(--color-hex-citrus);
@@ -643,7 +636,7 @@
     .steps__group {
         padding-top: 60.8%;
 
-        border-radius: 0;
+        /*border-radius: 0;*/
         background-repeat: no-repeat;
         background-position: top;
         background-image: url("../img/third320.png");

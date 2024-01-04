@@ -428,7 +428,7 @@ body {
 }
 
 .steps__group {
-  border-radius: 32px;
+  /*border-radius: 32px;*/
 
   background-repeat: no-repeat;
   background-position: right bottom;
