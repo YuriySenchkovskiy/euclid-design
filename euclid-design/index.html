@@ -16,8 +16,8 @@
 
     <header class="header">
       <div class="header__items flex">
-        <a class="header__logo" href="./index.html">
-          <img class="header__logo-image" src="./img/logo.svg" alt="Евклид - проектные системы">
+        <a class="header__logo visible" href="./index.html">
+          <img class="header__logo-image invisible" src="./img/logo.svg" alt="Евклид - проектные системы">
         </a>
         <div class="header__right flex">
           <nav class="nav">
@@ -66,7 +66,7 @@
             </h1>
             <p class="hero__text">Есть&nbsp;над&nbsp;чем&nbsp;задуматься: базовые сценарии поведения пользователей
               и&nbsp;по&nbsp;сей&nbsp;день остаются уделом проектантов</p>
-            <button class="hero__button" type="submit">
+            <button class="hero__button visible" type="submit">
               Заказать расчёт
             </button>
           </div>
@@ -99,7 +99,7 @@
                 <p class="advantages__text">
                   Принимая&nbsp;во&nbsp;внимание&nbsp;показатели успешности, перспективное планирование&nbsp;способствует подготовке и&nbsp;реализации&nbsp;новых принципов
                 </p>
-                <button class="advantages__button">
+                <button class="advantages__button visible">
                   Подробнее
                 </button>
               </div>
@@ -148,10 +148,10 @@
                 </div>
               </div>
               <div class="steps__buttons flex">
-                <button class="steps__button1" type="submit">
+                <button class="steps__button1 visible" type="submit">
                   Подробнее
                 </button>
-                <button class="steps__button2" type="submit">
+                <button class="steps__button2 visible" type="submit">
                   Договор
                 </button>
               </div>
@@ -190,8 +190,8 @@
       <section id="form" class="footer__section flex">
         <div class="footer__first-block flex">
           <div class="footer__logo-block">
-            <a class="footer__logo" href="./index.html">
-              <img class="footer__logo-image" src="./img/logo-footer.svg" alt="Евклид - проектные системы">
+            <a class="footer__logo visible" href="./index.html">
+              <img class="footer__logo-image invisible" src="./img/logo-footer.svg" alt="Евклид - проектные системы">
             </a>
           </div>
           <div class="footer__nav">
@@ -261,25 +261,25 @@
           <form class="footer__form flex" action="https://jsonplaceholder.typicode.com/posts" method="POST">
             <div class="footer__form-element1">
               <label class="footer__label" for="person"></label>
-              <input class="footer__input" id="person" name="person" required
+              <input class="footer__input visible" id="person" name="person" required
                      minlength="0" maxlength="100" placeholder="Фамилия, имя&nbsp;и&nbsp;отчество*">
             </div>
             <div class="footer__form-element2">
               <label class="footer__label" for="email"></label>
-              <input class="footer__input" id="email" name="email" required
+              <input class="footer__input visible" id="email" name="email" required
                      minlength="0" maxlength="100" placeholder="Email*">
             </div>
             <div class="footer__form-element3">
-              <textarea class="footer__input footer__message" id="message" name="message"
+              <textarea class="footer__input footer__message visible" id="message" name="message"
                         rows="3" placeholder="Сообщение"></textarea>
             </div>
           </form>
           <div class="footer__buttons flex">
-            <button class="footer__button" type="submit">
+            <button class="footer__button visible" type="submit">
               Отправить данные
             </button>
             <div>
-              <input type="checkbox" checked="checked" id="check" name="check" value="Agree">
+              <input class="checkbox visible" type="checkbox" checked="checked" id="check" name="check" value="Agree">
               <label class="footer__checkbox-text" for="check">Согласен на обработку данных</label>
             </div>
           </div>
